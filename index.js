@@ -31,11 +31,7 @@
 	var layersEntireYear=[0,1,13.2,23,35.5,43,57.5,72,1000];
 	
 	
-	//data of the breeding sites
-	function detection(results) {
-        console.log('1');
-        data = results; 
-    }
+	
 
 	//General province data
 	function NST_total(results) {
