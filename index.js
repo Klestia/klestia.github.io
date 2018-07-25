@@ -146,8 +146,8 @@
 		if (subDistrict.length > 0) {
 			config.data.labels.splice(0, 10);
 			config.data.datasets.splice(0, 1);
-			for (i = 0; i < data['features'].length; i++) {
-				if (subDistrict[0].properties.TB_EN == data['features'][i]['properties']['subdist_en'] )
+			for (i = 0; i < NSTdata['features'].length; i++) {
+				if (subDistrict[0].properties.TB_EN == NSTdata['features'][i]['properties']['TB_EN'] )
 				{
 					var pottedplant=0;
 					var bucket=0;
@@ -161,42 +161,22 @@
 					var sum=0;
 					var chartData=[];
 					var chartDataTmp=[];
-					var obj = data['features'][i]['properties']['brd_sites'];
+					var obj = NSTdata['features'][i]['properties']['Breeding_site_classes'];
 					chartLabel=['bucket','pottedplant','bin','tire','jar','cup','bowl','vase'];	
 					
-					for(var head in obj){
-						var count = obj[head]['count'];
-						for (var cls in count)
-						{
-							if(cls in clsa)
-							{
-								clsa[cls] += count[cls];
-							}
-							else
-							{
-								clsa[cls] = count[cls];
-							}
-						}
-						for(var key in clsa)
-						{
-							if(key=='pottedplant')
-								{pottedplant+=clsa[key];}
-							else if (key=='bucket')
-								{bucket+=clsa[key];}
-							else if (key=='tire')
-								{tire+=clsa[key];}
-							else if (key=='bin')
-								{bin+=clsa[key];}
-							else if (key=='vase')
-								{vase+=clsa[key];}
-							else if (key=='cup')
-								{cup+=clsa[key];}
-							else if (key=='jar')
-								{jar+=clsa[key];}
-							else{bowl+=clsa[key];}
-						}
-						chartDataTmp=[pottedplant,bucket,tire,bin,vase,cup,jar,bowl];	
-					}		
+					
+						chartDataTmp.push(obj['bucket']);
+						chartDataTmp.push(obj['pottedplant']);
+						chartDataTmp.push(obj['bin']);
+						chartDataTmp.push(obj['tire']);
+						chartDataTmp.push(obj['jar']);
+						chartDataTmp.push(obj['cup']);
+						chartDataTmp.push(obj['bowl']);
+						chartDataTmp.push(obj['vase']);
+					
+						
+	
+							
 				}
 			}
 			document.getElementById('Area_d').innerHTML = "<b>Selected sub-district: &nbsp</b>"+subDistrict[0].properties.TB_EN;
@@ -805,10 +785,7 @@
 	//General chart for all breedig sites. Pie Chart
 	function countBreedingSites()
 	{
-		var clsa= {};
-		for (i = 0; i < data['features'].length; i++) 
-		{
-			var sitesTotal=0;
+		var sitesTotal=0;
 			var pottedplant=0;
 			var bucket=0;
 			var tire=0;
@@ -820,47 +797,37 @@
 			var str;
 			var sum=0;
 			var piechartData=[];
-			var obj = data['features'][i]['properties']['brd_sites'];
-			var piechartLabel=['bucket','pottedplant','bin','tire','jar','cup','bowl','vase'];	
 			var chartLabel=[];	
-			var chartData=[];			
+			var chartData=[];
+			
+		for (i = 0; i < NSTdata['features'].length; i++) 
+		{
+			
+			var obj = NSTdata['features'][i]['properties']['Breeding_site_classes'];
+			var piechartLabel=['bucket','pottedplant','bin','tire','jar','cup','bowl','vase'];	
+						
 									
-			for(var head in obj){				
-				var count = obj[head]['count'];
-				for (var cls in count)
-				{
-					if(cls in clsa)
-					{
-						clsa[cls] += count[cls];
-					}
-					else
-					{
-						clsa[cls] = count[cls];
-					}
+		
+				pottedplant+=obj['pottedplant'];
+				
+				bucket+=obj['bucket'];
 					
-				}
-									
-				for(var key in clsa)
-				{
-					if(key=='pottedplant')
-						{pottedplant+=clsa[key];}
-					else if (key=='bucket')
-						{bucket+=clsa[key];}
-					else if (key=='tire')
-						{tire+=clsa[key];}
-					else if (key=='bin')
-						{bin+=clsa[key];}
-					else if (key=='vase')
-						{vase+=clsa[key];}
-					else if (key=='cup')
-						{cup+=clsa[key];}
-					else if (key=='jar')
-						{jar+=clsa[key];}
-					else{bowl+=clsa[key];}
-				}
-			}
-			piechartData=[bucket,pottedplant,bin,tire,jar,cup,bowl,vase]		
+				tire+=obj['tire'];
+			
+				bin+=obj['bin'];
+				
+				vase+=obj['vase'];
+				
+				cup+=obj['cup'];
+				
+				jar+=obj['jar'];
+				
+				bowl+=obj['bowl'];
+				
 		}
+			piechartData=[bucket,pottedplant,bin,tire,jar,cup,bowl,vase];		
+	
+
 		
 		//find percentage of each breeding site
 		function getTotal(total, num) {
@@ -874,7 +841,7 @@
 		}
 		
 		
-		for (var i = 0; i < piechartData.length-1; i++) { //length-1 to remove vase since it has only 0%
+		for (var i = 0; i < piechartData.length; i++) { //length-1 to remove vase since it has only 0%
 			sum += piechartData[i];
 			if(piechartData[i]!=0){
 				chartData.push(piechartData[i]);
