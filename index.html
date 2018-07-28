@@ -29,7 +29,7 @@
 			
 				<span style="padding-left: 22px;padding-bottom: 12px;display: inline-block;"><b>Map Type</b></span>
 
-				<a href="#"  class="map_sel active-map-type" onclick="toMainMap('Breeding Sites')">
+				<a href="#" id="detected-breeding-sites" class="map_sel" onclick="toMainMap('Breeding Sites')">
 					<font color="#888">Detected Breeding Sites</font>
 				</a>
 				<div id="BS-drop2" class="opacity dropdown-content BS-drop2">
@@ -48,14 +48,14 @@
 					</div>
 				</div>
 				
-				<a href="#" class="map_sel" onclick="toMainMap('Dengue Cases')">
+				<a href="#" class="map_sel" id="dengue-cases" onclick="toMainMap('Dengue Cases')">
 					<font color="#888">Dengue Cases</font>
 				</a>
-				<a href="#" class="map_sel" onclick="toMainMap('Population')">
+				<a href="#" class="map_sel" id="population" onclick="toMainMap('Population')">
 					<font color="#888">Population</font>
 				</a>
 				
-				<a href="#" class="map_sel" onclick="toMainMap('Breteau_index Avg')">
+				<a href="#" class="map_sel" id="bi-index" onclick="toMainMap('Breteau_index Avg')">
 					<font color="#888">BI Index</font>
 				</a>
 				<div id="bi-index-drop1" class="opacity dropdown-content bi-index-drop1">
@@ -81,7 +81,7 @@
 				 
 				<span style="padding-left: 22px;padding-bottom: 12px;display: inline-block;"><b>Side Map Type</b></span>
 				
-				<a href="#" class="map_sel" onclick="toSideMap('Breeding Sites')">
+				<a href="#" class="map_sel" id="detec-breeding-sites" onclick="toSideMap('Breeding Sites')">
 					<font color="#888">Detected Breeding Sites</font>
 				</a>
 				<div id="BS-drop2" class="opacity dropdown-content BS-drop2">
@@ -101,14 +101,14 @@
 					</div>
 				</div>
 				
-				<a href="#" class="map_sel" onclick="toSideMap('Dengue Cases')">
+				<a href="#" id="dengue-cases2" class="map_sel" onclick="toSideMap('Dengue Cases')">
 					<font color="#888">Dengue Cases</font>
 				</a>
-				<a href="#" class="map_sel" onclick="toSideMap('Population')">
+				<a href="#" id="population2" class="map_sel" onclick="toSideMap('Population')">
 					<font color="#888">Population</font>
 				</a>
 				
-				<a href="#" class="map_sel" onclick="toSideMap('Breteau_index Avg')">
+				<a href="#" id="bi-index22" class="map_sel" onclick="toSideMap('Breteau_index Avg')">
 					<font color="#888">BI Index</font>
 				</a>
 				<div id="bi-index-drop2" class="opacity dropdown-content bi-index-drop2">

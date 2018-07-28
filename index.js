@@ -873,3 +873,74 @@
 		var ctx2 = document.getElementById('chart-area2').getContext('2d');
 		window.myPie = new Chart(ctx2, config2);							
 	}
+
+	/*
+	* Event listener for the side menu
+	*/
+	document.getElementById("detected-breeding-sites").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("BS-drop2").style.display = "block";
+		document.getElementById("bi-index-drop1").style.display = "none";
+		document.getElementById("dengue-cases").classList.remove("active-map-type");
+		document.getElementById("population").classList.remove("active-map-type");
+		document.getElementById("bi-index").classList.remove("active-map-type");
+	});
+
+	document.getElementById("dengue-cases").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("BS-drop2").style.display = "none";
+		document.getElementById("bi-index-drop1").style.display = "none";
+		document.getElementById("detected-breeding-sites").classList.remove("active-map-type");
+		document.getElementById("population").classList.remove("active-map-type");
+		document.getElementById("bi-index").classList.remove("active-map-type");
+	});
+
+	document.getElementById("population").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("BS-drop2").style.display = "none";
+		document.getElementById("bi-index-drop1").style.display = "none";
+		document.getElementById("detected-breeding-sites").classList.remove("active-map-type");
+		document.getElementById("dengue-cases").classList.remove("active-map-type");
+		document.getElementById("bi-index").classList.remove("active-map-type");
+	});
+
+	document.getElementById("bi-index").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("BS-drop2").style.display = "none";
+		document.getElementById("bi-index-drop1").style.display = "block";
+		document.getElementById("detected-breeding-sites").classList.remove("active-map-type");
+		document.getElementById("dengue-cases").classList.remove("active-map-type");
+		document.getElementById("population").classList.remove("active-map-type");
+	});
+
+	document.getElementById("detec-breeding-sites").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("bi-index-drop2").style.display = "none";
+		document.getElementById("dengue-cases2").classList.remove("active-map-type");
+		document.getElementById("population2").classList.remove("active-map-type");
+		document.getElementById("bi-index22").classList.remove("active-map-type");
+	});
+
+	document.getElementById("dengue-cases2").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("bi-index-drop2").style.display = "none";
+		document.getElementById("detec-breeding-sites").classList.remove("active-map-type");
+		document.getElementById("population2").classList.remove("active-map-type");
+		document.getElementById("bi-index22").classList.remove("active-map-type");
+	});
+
+	document.getElementById("population2").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("bi-index-drop2").style.display = "none";
+		document.getElementById("dengue-cases2").classList.remove("active-map-type");
+		document.getElementById("detec-breeding-sites").classList.remove("active-map-type");
+		document.getElementById("bi-index22").classList.remove("active-map-type");
+	});
+
+	document.getElementById("bi-index22").addEventListener("click", function(){
+		this.classList.add("active-map-type");
+		document.getElementById("bi-index-drop2").style.display = "block";
+		document.getElementById("dengue-cases2").classList.remove("active-map-type");
+		document.getElementById("population2").classList.remove("active-map-type");
+		document.getElementById("detec-breeding-sites").classList.remove("active-map-type");
+	});
