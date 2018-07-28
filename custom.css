@@ -136,3 +136,17 @@ margin-left: 60;
 #BS-drop2, #bi-index-drop1, #bi-index-drop2 {
 	display: none;
 }
+
+@media (max-width: 1366px) {
+	.side-info-area {
+		width: 330px;
+	}
+
+	#sideMap {
+		margin-right: 330px;
+	}
+
+	#legend {
+		left: 250px !important;
+	}
+}
