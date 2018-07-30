@@ -22,13 +22,13 @@
 #sideMap{
 	background-color: #A9D0F5;
 	height: 100%;
-	width: 37%;
+	width: 35%;
 	top: 4.4%;
 	left: 0;
 	position: relative;
 	transition: 0.5s;
 	float:right;
-	margin-right:27%;
+	margin-right:23%;
 	display:none;
 
 }
