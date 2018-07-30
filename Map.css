@@ -16,7 +16,7 @@
 	left: 0;
 	position: fixed;
 	transition: 0.5s;
-	margin-right:0px;
+	margin-right:0;
 }
 
 #sideMap{
@@ -237,7 +237,7 @@ a.psel{
 #sideInfoBox .closebtn {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
 	border: none; /* Remove borders */
     color: white; /* Add a text color */
     padding: 4px 10px; /* Add some padding */
@@ -275,21 +275,7 @@ a.psel{
 	top: 0.3%;
 }
 
-#info-con{
-	position: absolute;
-	font-size: small;
-	left: 18px;
-	top: 35px;
-}
 
-.info-head-style{
-	position: absolute;
-	background-color: #424242;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 30px;
-}
 
 
 
@@ -299,7 +285,7 @@ a.psel{
 * on the page */
 #map {
   position: relative;
-  top: 40;
+  top: 4.4%;
   bottom: 0;
   width: 100%;
   right:31%;
@@ -385,7 +371,7 @@ a.psel{
   border-radius: 20%;
   width: 10px;
   height: 10px;
-  margin-right: 5px;
+  margin-right: 0.55%;
 }
 
 .menu-ui {

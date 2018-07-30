@@ -24,7 +24,7 @@
 
 #logo .logo-img {
 	position: relative;
-	transform: translateY(-12px);
+	
 	margin-left: 3.5%;
 	top:5%;
 }
@@ -75,16 +75,3 @@ margin-left: 4.2%;
 	display: none;
 }
 
-@media (max-width: 1440px) {
-	.side-info-area {
-		width: 330px;
-	}
-
-	#sideMap {
-		margin-right: 330px;
-	}
-
-	#legend {
-		left: 250px !important;
-	}
-}
