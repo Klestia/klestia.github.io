@@ -707,7 +707,7 @@
 		document.getElementById("mainMap").style.width="60%";
 		document.getElementById("sideMap_title").style.display = "block";
 		document.getElementById("features").style.display = "none";	
-		sideMap.resize() 
+		sideMap.resize(); 
 	}
 	
 	//close side map
