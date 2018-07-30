@@ -34,6 +34,7 @@
 	top: 1%;
 }
 
+
 #mySidenav {
 	position: fixed;
 	top: 8.3%;
@@ -41,7 +42,7 @@
 	left: 2%;
     padding-top: 2%;
 	width: 13.8%;
-	transform: translateX(-13.8%);
+	transform: translateX(-14%);
 }
 
 
