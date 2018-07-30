@@ -1,7 +1,7 @@
 #header{
 	position: fixed;
 	background-color: #1C1C1C;
-	height: 40px;
+	height: 4.4%;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -12,31 +12,31 @@
 	background-color: #A9D0F5;
 	height: 100%;
 	width: 100%;
-	top: 40px;
+	top: 4.4%;
 	left: 0;
 	position: fixed;
 	transition: 0.5s;
-	
 	margin-right:0px;
 }
+
 #sideMap{
 	background-color: #A9D0F5;
 	height: 100%;
 	width: 37%;
-	top: 40px;
+	top: 4.4%;
 	left: 0;
 	position: relative;
 	transition: 0.5s;
 	float:right;
-	margin-right:390px;
+	margin-right:27%;
 	display:none;
 
 }
 
 #Data-Head{
-	font-size: 15px;
+	font-size: small;
 	font-weight: bold;
-	padding-top: 10px;
+	padding-top: 1%;
 }
 
 
@@ -65,10 +65,10 @@
     padding: 4px 13px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 	position: fixed;
-	top: 40px;
+	top: 4.4%;
 	left: 0;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: small;
 	background-color: #1C1C1C;
 }
 
@@ -81,7 +81,7 @@
 	top: 0;
 	position: fixed;
 	margin: right;
-	height: 40px;
+	height: 4.4%;
 }
 
 #logo{
@@ -97,20 +97,20 @@ body {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index:100; /* Stay on top */
-    top: 40px; /* Stay at the top */
+    top: 4.4%; /* Stay at the top */
     left: 0;
     background-color: #fff; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 6.6%; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     box-shadow: 0 5px 10px rgba(0,0,0,.15);
 }
 
 /******************** The navigation menu links ********************/
 .sidenav a {
-    padding-right: 10px;
+    padding-right: 1%;
     text-decoration: none;
-    font-size: 13px;
+    font-size: small;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -124,17 +124,17 @@ body {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 12px;
-    right: 12px;
-    font-size: 36px;
+    top: 1.3%;
+    right: 0.8%;
+    font-size: medium;
 	border: none; /* Remove borders */
     color: white; /* Add a text color */
 	font-weight: bold;
-	font-size: 20px;
+	font-size: small;
 	background-color: transparent;
     border: 3px solid #5bc0de8f;
-    width: 35px;
-    height: 35px;
+    width: 2.4%;
+    height: 2.4%;
     border-radius: 50%;
     color: #5bc0de8f;
     cursor: pointer;
@@ -144,17 +144,16 @@ body {
     position: absolute;
 	display:none;
 	z-index:1;
-    top: 90px;
-    right: 430px;
-    font-size: 36px;
+    top: 10%;
+    right: 30%;
 	border: none; /* Remove borders */
     color: white; /* Add a text color */
 	font-weight: bold;
-	font-size: 20px;
+	font-size: small;
 	background-color: transparent;
     border: 3px solid #1212128f;
-    width: 35px;
-    height: 35px;
+    width: 2.4%;
+    height: 3.8%;
     border-radius: 50%;
     color: #1415168f;
     cursor: pointer;
@@ -166,57 +165,6 @@ body {
 }
 
 
-
-
-
-/****************************** time stamp ******************************/
-.to{
-	position: absolute;
-	right: 90px;
-	top: 2px;
-}
-
-.t-to{
-	position: absolute;
-	right: 5px;
-	top: 20px;
-}
-
-.slash{
-	position: absolute;
-	right: 115px;
-	font-size: 25;
-	top: 7px;
-	font-weight: normal;
-}
-
-.time-slider-con{
-	font-weight: bold;
-	font-size: 12px;
-	position: absolute;
-	min-width: 240px;
-	right: 95px;
-	bottom: 20px;
-	background: #fff;
-	height: 45px;
-}
-
-.go{
-	min-width: 290px;
-	right: 45px;
-}
-
-.t-from{
-	position: absolute;
-	left: 5px;
-	top: 20px;
-}
-
-.from{
-	position: absolute;
-	left: 10px;
-	top: 2px;
-}
 
 #map_ {
 	border-top: 1px solid #eee;
@@ -235,12 +183,12 @@ body {
 }
 
 a.map_sel{
-	min-width: 200px;
-	min-height: 30px;
+	min-width: 14%;
+	min-height: 3.3%;
 	text-align: left;
-	font-size: 15px;
-	padding-top: 5px;
-	padding-left: 22px;
+	font-size: small;
+	padding-top: 0.5%;
+	padding-left: 1.5%;
 	color: #888 !important;
     background-color: #fff;
     border-bottom: 1px solid #eee;
@@ -294,7 +242,7 @@ a.psel{
     color: white; /* Add a text color */
     padding: 4px 10px; /* Add some padding */
 	font-weight: bold;
-	font-size: 15px;
+	font-size: small;
 	background-color: #424242;
 }
 
@@ -310,7 +258,7 @@ a.psel{
     color: white; /* Add a text color */
     padding: 4px 10px; /* Add some padding */
 	font-weight: bold;
-	font-size: 15px;
+	font-size: small;
 	background-color: #424242;
 }
 
@@ -322,14 +270,14 @@ a.psel{
 .info-head{
 	position: absolute;
 	font-weight: bold;
-	font-size: 14px;
-	left: 10px;
-	top: 5px;
+	font-size: small;
+	left: 0.7%;
+	top: 0.3%;
 }
 
 #info-con{
 	position: absolute;
-	font-size: 12px;
+	font-size: small;
 	left: 18px;
 	top: 35px;
 }
@@ -354,7 +302,7 @@ a.psel{
   top: 40;
   bottom: 0;
   width: 100%;
-  right:450;
+  right:31%;
 }
 
 /**
@@ -366,55 +314,56 @@ a.psel{
   bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.20);
-  margin-right: 20px;
+  margin-right: 2.2%px;
   font-family: Arial, sans-serif;
   overflow: auto;
   border-radius: 3px;
 }
 
 #features {
-  top: 70;
-  right:450;
-  height: 100px;
-  margin-top: 20px;
-  width: 270px;
+  top: 7.8%;
+  right:31%;
+  height: 11%;
+  margin-top: 2.2%;
+  width: 18.7%;
 }
 
 #mainMap_title{
-  top: 70;
-  left:230;
+  top: 7.8%;
+  left:16%;
   
-  height: 70px;
-  margin-top: 20px;
-  width: 200px;
+  height: 7.8%px;
+  margin-top: 2.2%;
+  width: 14%;
 }
 
 #sideMap_title{
-  top: 70;
-  right:530;
+  top: 7.8%;
+  right:37%;
   display:none;
-  height: 70px;
-  margin-top: 20px;
-  width: 200px;
+  height: 7.8%;
+  margin-top: 2.2%;
+  width: 14%;
 }
 
 #legend {
-  padding: 10px;
-  right:450;
+  padding: 0.7%;
+  right:31%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 18px;
-  height: 170px;
-  margin-bottom: 40px;
-  width: 110px;
+  height: 19%;
+  margin-bottom: 4.4%;
+  width: 7.6%;
 }
+
 #legend2 {
-  padding: 10px;
-  right:400;
+  padding: 0.7%;
+  right:27.8%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 18px;
-  height: 170px;
-  margin-bottom: 40px;
-  width: 110px;
+  height: 19%;
+  margin-bottom: 4.4%;
+  width: 7.6%;
   display:none;
 }
 
@@ -441,8 +390,8 @@ a.psel{
 
 .menu-ui {
   position:absolute;
-  top:100px;
-  right:600px;
+  top:1.1%;
+  right:41.7%;
   }
 
 /* Do a fancy data transition for browsers that support it */
