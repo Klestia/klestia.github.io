@@ -694,7 +694,7 @@
 
 		/* Set the width of the side navigation to 0 */
 	function closeNav() {
-		document.getElementById("mySidenav").style.transform = "translateX(-13.9%)";
+		document.getElementById("mySidenav").style.transform = "translateX(-12px)";
 	}
 	
 	function showSideMap()
