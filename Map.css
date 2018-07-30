@@ -355,9 +355,6 @@ a.psel{
 }
 
 
-.checkbox-teal [type="checkbox"]:checked+label:before {
-    border-color: transparent #009688 #009688 transparent;
-}
 
 .legend-key {
   display: inline-block;

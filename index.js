@@ -73,10 +73,6 @@
 			legend: {
 				position: 'right',
 			},
-			title: {
-				display: true,
-				text: ''
-			},
 			animation: {
 				animateScale: true,
 				animateRotate: true
@@ -232,7 +228,7 @@
 			data: {
 				datasets: [{
 					data: barChartData,
-					label: 'Breteau Index',
+					label: 'Breteau Index in selected sub-district',
 					backgroundColor: '#36A2EB',
 					borderColor: '#36A2EB',
 					borderWidth: 1,
@@ -244,10 +240,7 @@
 				legend: {
 					position: 'bottom',
 				},
-				title: {
-					display: true,
-					text: 'Breteau Index in the selected subdistrict'
-				},
+			
 				animation: {
 					animateScale: true,
 					animateRotate: true
