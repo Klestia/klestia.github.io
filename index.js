@@ -487,7 +487,7 @@
 			stepsMain=selectTypeBS(typeMain);
 			layers=steps;
 			//param for main map style
-			selectedMainMap='BI20kk';
+			selectedMainMap='BsType';
 			
 			mainMap.addLayer({
 				id: 'BS',
@@ -766,6 +766,21 @@
 			}
 			if (subDistrict.length > 0) {
 				document.getElementById('pd').innerHTML = '<h3><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Breteau_index '+yearMain+': <em>' + BIobj[''+yearMain+''] + '</strong></em></p>';
+			} 
+			else{
+				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
+			}	
+		}
+		else if (selectedMainMap=='BsType')
+		{
+			for (i = 0; i < NSTdata['features'].length; i++) {
+				if (subDistrict[0].properties.TB_EN == NSTdata['features'][i]['properties']['TB_EN'] )
+				{
+					var BIobj = NSTdata['features'][i]['properties']['Breeding_site_classes'];
+				}	
+			}
+			if (subDistrict.length > 0) {
+				document.getElementById('pd').innerHTML = '<h3><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Breeding_site_'+typeMain+': <em>' + BIobj[''+typeMain+''] + '</strong></em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
