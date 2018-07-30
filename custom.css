@@ -1,9 +1,9 @@
 .side-info-area {
 	position: fixed;
-	top: 75px;
+	top: 8.3%;
 	bottom: 0;
 	right: 0;
-	width: 400px;
+	width: 27%%;
 	background: #fff;
 	box-shadow: 0 -10px 10px rgba(0,0,0,.2);
 }
@@ -25,7 +25,7 @@
 #logo .logo-img {
 	position: relative;
 	transform: translateY(-12px);
-	margin-left: 50px;
+	margin-left: 3.5%;
 }
 
 

@@ -265,23 +265,23 @@ a.map_sel:hover {
 }
 
 a.psel{
-	min-width: 200px;
-	min-height: 30px;
+	min-width: 14%;
+	min-height: 3.3%;
 	text-align: left;
-	font-size: 13px;
-	padding-top: 5px;
-	padding-left: 50px;
+	font-size: small;
+	padding-top: 3%;
+	padding-left: 10%;
 	color: #fff;
 }
 
 #sideInfoBox{
-	font-size: 12px;
+	font-size: small;
 	position: absolute;
-	min-width: 200px;
-	right: 1000px;
+	min-width: 14%;
+	right: 69%;
 	top: 10%;
 	background: #585858;
-	height: 180px;
+	height: 20%;
 	color: white;
 	display: none;
 }
