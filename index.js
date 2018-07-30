@@ -726,7 +726,7 @@
 	{
 		if( selectedMainMap=='Breeding Sites'){ 
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong><em>Breeding sites density/pop: ' + subDistrict[0].properties.Density + '</strong></em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><em>Breeding sites density/pop: ' + subDistrict[0].properties.Density + '</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
@@ -734,7 +734,7 @@
 		}
 		else if(selectedMainMap=='Dengue Cases'){ //if map style== Dengue cases map
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong><em>' + subDistrict[0].properties.Dengue_cases + '</strong> dengue cases</em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><em>' + subDistrict[0].properties.Dengue_cases + ' dengue cases</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
@@ -742,7 +742,7 @@
 		}	
 		else if (selectedMainMap=='Breteau_index Avg'){ //if map style== BI avg map
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Avarage Breteau Index: <em>' + subDistrict[0].properties.Avg_BI + '</strong></em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p>Avarage Breteau Index: <em>' + subDistrict[0].properties.Avg_BI + '</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
@@ -752,7 +752,7 @@
 		else if (selectedMainMap=='Population'){ //if map style==population map
 		
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Population: <em>' + subDistrict[0].properties.Population + '</strong></em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p>Population: <em>' + subDistrict[0].properties.Population + '</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
@@ -767,7 +767,7 @@
 				}	
 			}
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Breteau_index '+yearMain+': <em>' + BIobj[''+yearMain+''] + '</strong></em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p>Breteau_index '+yearMain+': <em>' + BIobj[''+yearMain+''] + '</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
@@ -782,7 +782,7 @@
 				}	
 			}
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Breeding_site_'+typeMain+': <em>' + BIobj[''+typeMain+''] + '</strong></em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p>Breeding_site_'+typeMain+': <em>' + BIobj[''+typeMain+''] + '</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
