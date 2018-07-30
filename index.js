@@ -702,7 +702,7 @@
 		document.getElementById("sideMap").style.display = "block";
 		document.getElementById("closebtn").style.display = "block";
 		document.getElementById("mainMap").style.float="left";
-		document.getElementById("legend").style.left="45%";
+		document.getElementById("legend").style.left="30%";
 		document.getElementById("legend2").style.display="block";
 		document.getElementById("mainMap").style.width="60%";
 		document.getElementById("sideMap_title").style.display = "block";
