@@ -90,7 +90,7 @@
 	mainMap.on('load', function() {	 	 
 		selectedMainMap='Breeding Sites';
 		layers = ['0-5', '5-10', '10-17', '17-31', '31-55', '55-86', '86-425', '425-692'];
-		document.getElementById('mainMap_title').innerHTML = '<h4>Breeding sites density map/pop</h4>';
+		document.getElementById('mainMap_title').innerHTML = '<h6>Breeding sites density map/pop</h6>';
 			
 		for (i = 0; i < layers.length; i++) {
 			var layer = layers[i];
@@ -285,7 +285,7 @@
 		}
 		
 		mainMap.setStyle(mainMapStyle);
-		document.getElementById('mainMap_title').innerHTML = '<h4>'+selectedMainMap+' map</h4>';
+		document.getElementById('mainMap_title').innerHTML = '<h6>'+selectedMainMap+' map</h6>';
 		
 		addMapOverlay();
 	
@@ -318,7 +318,7 @@
 		}
 		
 		sideMap.setStyle(sideMapStyle);
-		document.getElementById('sideMap_title').innerHTML = '<h4>'+selectedSideMap+' map</h4>';
+		document.getElementById('sideMap_title').innerHTML = '<h6>'+selectedSideMap+' map</h6>';
 		showSideMap();
 		addSideMapOverlay();
 	}
@@ -522,7 +522,7 @@
 				}
 			 },"road-label");
 		  
-			document.getElementById('mainMap_title').innerHTML = '<h4>'+typeMain+' breeding sites Map</h4>';
+			document.getElementById('mainMap_title').innerHTML = '<h6>'+typeMain+' breeding sites Map</h6>';
 			
 			addMapOverlay();
 		}
@@ -569,7 +569,7 @@
 					'fill-outline-color': '#a08279',
 				}
 			 },"road-label");
-			document.getElementById('sideMap_title').innerHTML = '<h4> '+typeSide+' breeding sites Map</h4>';
+			document.getElementById('sideMap_title').innerHTML = '<h6> '+typeSide+' breeding sites Map</h6>';
 			showSideMap();
 			addSideMapOverlay();
 		}
@@ -635,7 +635,7 @@
 				}
 			 },"road-label");
 		  
-			document.getElementById('mainMap_title').innerHTML = '<h4>'+yearMain+' Breteau Index Map</h4>';
+			document.getElementById('mainMap_title').innerHTML = '<h6>'+yearMain+' Breteau Index Map</h6>';
 			addMapOverlay();
 		}
 		
@@ -681,7 +681,7 @@
 					'fill-outline-color': '#a08279',
 				}
 			 },"road-label");
-			document.getElementById('sideMap_title').innerHTML = '<h4> '+yearSide+' Breteau Index Map</h4>';
+			document.getElementById('sideMap_title').innerHTML = '<h6> '+yearSide+' Breteau Index Map</h6>';
 			showSideMap();
 			addSideMapOverlay();
 		}
@@ -694,7 +694,7 @@
 
 		/* Set the width of the side navigation to 0 */
 	function closeNav() {
-		document.getElementById("mySidenav").style.transform = "translateX(-200px)";
+		document.getElementById("mySidenav").style.transform = "translateX(-13%)";
 	}
 	
 	function showSideMap()
