@@ -29,6 +29,8 @@
 	var layers2017=[0,1,8,24,33,51,89,107,1000];
 	var layersDengueSeas=[0,1,7.5,16.42,22.5,32.5,45.83,65,1000];
 	var layersEntireYear=[0,1,13.2,23,35.5,43,57.5,72,1000];
+	var yearMain;
+	var typeMain;
 	
 	
 	
