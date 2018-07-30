@@ -362,9 +362,9 @@ a.psel{
 .legend-key {
   display: inline-block;
   border-radius: 20%;
-  width: 10%;
-  height: 8%;
-  margin-right: 0.3%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
 }
 
 .legend2-key {
