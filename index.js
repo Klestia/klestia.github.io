@@ -765,7 +765,7 @@
 				}	
 			}
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h3><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Breteau_index '+year1+': <em>' + BIobj[''+year1+''] + '</strong></em></p>';
+				document.getElementById('pd').innerHTML = '<h3><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><strong>Breteau_index '+yearMain+': <em>' + BIobj[''+yearMain+''] + '</strong></em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
