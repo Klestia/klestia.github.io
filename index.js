@@ -842,7 +842,7 @@
 		}
 		sitesTotal= piechartData.reduce(getTotal);
 		
-		for (var i=0; i<piechartLabel.length-1; i++) //remove bowl, 0%
+		for (var i=0; i<piechartLabel.length; i++) 
 		{
 			piechartLabel[i]= ""+Math.round((piechartData[i]/sitesTotal)*100)+"% "+piechartLabel[i]+"";
 		}
