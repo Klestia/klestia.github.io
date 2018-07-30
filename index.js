@@ -173,7 +173,7 @@
 							
 				}
 			}
-			document.getElementById('Area_d').innerHTML = "<b>Selected sub-district: &nbsp</b>"+subDistrict[0].properties.TB_EN;
+		
 		}
 
 		//find percentage of each breeding site
@@ -195,7 +195,7 @@
 				config.data.labels.push(chartLabel[i]);
 			}
 		}
-		document.getElementById('BSfound').innerHTML =  '<b>Total breeding sites:</b> &nbsp'+sum+ '<br><br>';
+		document.getElementById('BSfound').innerHTML =  '<b>'+subDistrict[0].properties.TB_EN+' breeding sites:</b> &nbsp'+sum+ '<br><br>';
 		
 					
 		var newDataset = {
