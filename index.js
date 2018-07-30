@@ -719,6 +719,7 @@
 		document.getElementById("mainMap").style.width = "100%";
 		document.getElementById("features").style.display = "block";
 		document.getElementById("legend").style.left = "93.8%";
+		mainMap.resize();
 	}
 	
 	//Only for the main map	

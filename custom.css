@@ -3,7 +3,7 @@
 	top: 8.3%;
 	bottom: 0;
 	right: 0;
-	width: 27%;
+	width: 25%;
 	background: #fff;
 	box-shadow: 0 -10px 10px rgba(0,0,0,.2);
 }
@@ -31,7 +31,7 @@
 
 .btnside {
 	z-index: 99999;
-	top: 1%;
+	top: 2%;
 }
 
 
