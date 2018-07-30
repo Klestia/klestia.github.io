@@ -694,7 +694,7 @@
 
 		/* Set the width of the side navigation to 0 */
 	function closeNav() {
-		document.getElementById("mySidenav").style.transform = "translateX(-200px)";
+		document.getElementById("mySidenav").style.transform = "translateX(-13.9%)";
 	}
 	
 	function showSideMap()
@@ -702,7 +702,7 @@
 		document.getElementById("sideMap").style.display = "block";
 		document.getElementById("closebtn").style.display = "block";
 		document.getElementById("mainMap").style.float="left";
-		document.getElementById("legend").style.left="650px";
+		document.getElementById("legend").style.left="45%";
 		document.getElementById("legend2").style.display="block";
 		document.getElementById("mainMap").style.width="60%";
 		document.getElementById("sideMap_title").style.display = "block";
@@ -718,7 +718,7 @@
 		document.getElementById("closebtn").style.display = "none";
 		document.getElementById("mainMap").style.width = "100%";
 		document.getElementById("features").style.display = "block";
-		document.getElementById("legend").style.left = "1350px";
+		document.getElementById("legend").style.left = "93.8%";
 	}
 	
 	//Only for the main map	
