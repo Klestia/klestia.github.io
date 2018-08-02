@@ -811,7 +811,7 @@
 		{
 			
 			var obj = NSTdata['features'][i]['properties']['Breeding_site_classes'];
-			var piechartLabel=['bucket','jar','pottedplant','cup','vase','bin','tire','bowl'];	
+			var piechartLabel=['bucket','pottedplant','bin','tire','jar','cup','bowl','vase'];	
 						
 									
 		
@@ -832,7 +832,7 @@
 				bowl+=obj['bowl'];
 				
 		}
-			piechartData=[bucket,jar,pottedplant,cup,vase,bin,tire,bowl];	
+			piechartData=[bucket,pottedplant,bin,tire,jar,cup,bowl,vase];	
 	
 
 		
