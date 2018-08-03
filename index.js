@@ -58,7 +58,7 @@
 	mainMap.getCanvas().style.cursor = 'default';
 	sideMap.getCanvas().style.cursor = 'default';
 	  
-    //Breeging sites per subdistrict chart variable
+    //Breeding sites per subdistrict chart variable
 	var config = {
 		type: 'doughnut',
 		data: {
@@ -195,7 +195,7 @@
 				config.data.labels.push(chartLabel[i]);
 			}
 		}
-		document.getElementById('BSfound').innerHTML =  '<b>'+subDistrict[0].properties.TB_EN+' breeding sites:</b> &nbsp'+sum+ '<br><br>';
+		document.getElementById('BSfound').innerHTML =  '<b> Selected sub-district: '+subDistrict[0].properties.TB_EN+'<br>Number of breeding sites:</b> &nbsp'+sum+ '<br><br>';
 		
 					
 		var newDataset = {
