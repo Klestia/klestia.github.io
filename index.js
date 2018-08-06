@@ -86,7 +86,7 @@
 	mainMap.on('load', function() {	 	 
 		selectedMainMap='Breeding Sites';
 		layers = ['0-5', '5-10', '10-17', '17-31', '31-55', '55-86', '86-425', '425-692'];
-		document.getElementById('mainMap_title').innerHTML = '<h6>Breeding sites density map/pop</h6>';
+		document.getElementById('mainMap_title').innerHTML = '<h6>Breeding sites density map</h6>';
 			
 		for (i = 0; i < layers.length; i++) {
 			var layer = layers[i];
