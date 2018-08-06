@@ -720,7 +720,7 @@
 	{
 		if( selectedMainMap=='Breeding Sites'){ 
 			if (subDistrict.length > 0) {
-				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><em>Breeding sites density/pop: ' + subDistrict[0].properties.Density + '</em></p>';
+				document.getElementById('pd').innerHTML = '<h6><strong>' + subDistrict[0].properties.TB_EN + '</strong></h3><p><em>Breeding sites density: ' + subDistrict[0].properties.Density + '</em></p>';
 			} 
 			else{
 				document.getElementById('pd').innerHTML = '<p>Hover over a subdistrict!</p>';
